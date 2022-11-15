@@ -1,4 +1,4 @@
-fetch("https://api.thingspeak.com/channels/1913859/feeds.json?results=2").then((data)=>{
+fetch("https://api.thingspeak.com/channels/1913859/feeds.json?results=100").then((data)=>{
 return data.json();
 }).then((objectData)=>{
 console.log(objectData.feeds[0]);
